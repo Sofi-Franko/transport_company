@@ -1,8 +1,3 @@
-const dotenv = require('dotenv')
-// const environment = process.env.NODE_ENV || 'development';
-const environment = 'production';
-dotenv.config({ path: `.env${environment === 'development' ? '' : '.' + environment}` });
-
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,

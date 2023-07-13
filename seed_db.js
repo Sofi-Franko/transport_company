@@ -1,10 +1,6 @@
 const mongoose = require('mongoose')
-const dotenv = require('dotenv')
 const Route = require('./models/Route')
 const Transport = require('./models/Transport')
-
-const environment = process.env.NODE_ENV || "development"
-dotenv.config({ path: `.env${environment === 'development' ? '' : '.' + environment}` });
 
 const transports = [
   {
