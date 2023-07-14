@@ -1,15 +1,25 @@
 # keiki_test_assignment
 
-## Build Setup
+## Setup
 
 ```bash
 # install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+# create .env file with DB_URL parameter
+DB_URL=mongodb+srv://keiki_user:pass123@keikicluster.rdsrcrr.mongodb.net/keiki?retryWrites=true&w=majority
+
+# start the app
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+# revert initial DB content
+$ npm run seed
 ```
+
+## Stack
+- Node.js
+- Vue
+- Nuxt
+- Express
+- MongoDB (mongoose)
+- Bootstrap

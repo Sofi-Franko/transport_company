@@ -37,9 +37,4 @@ app.delete('/transports/:id', TransportController.delete); // delete a transport
 
 app.put('/assign-transport', TransportController.assign); // assign free transport to an available route
 
-if (process.env.NODE_ENV === 'development') {
-  const PORT = process.env.PORT || 3000
-  app.listen(PORT, () => console.log(`Local server running on port ${PORT}`))
-}
-
 module.exports = { path: '/api', handler: app }
